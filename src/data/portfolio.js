@@ -4,12 +4,16 @@ const portfolioImages = [
     src: '/images/weddings/wedding-1.jpg',
     alt: 'Traditional wedding celebration shot',
     category: 'weddings',
+    objectPosition: 'top',
+    forceSquare: true,
   },
   {
     id: 2,
     src: '/images/weddings/wedding-2.jpg',
     alt: 'Bridal portrait and moments',
     category: 'weddings',
+    objectPosition: 'top',
+    forceSquare: true,
   },
   {
     id: 3,
@@ -25,6 +29,7 @@ const portfolioImages = [
     alt: 'Luxury wedding gallery shot',
     category: 'weddings',
     objectPosition: 'top',
+    forceSquare: true,
   },
   {
     id: 4,
