@@ -31,13 +31,13 @@ function About() {
           <h2 className="about-intro__heading">Hello, I'm E.k</h2>
           <p className="about-intro__body">
             I'm a passionate visual storyteller whose lens captures the soul of
-            every moment — the quiet intimacy of a wedding vow, the raw energy
+            every moment,the quiet intimacy of a wedding vow, the raw energy
             of a live event, and the bold confidence of a fashion editorial.
             My work bridges artistry and authenticity, honouring real emotion
             while crafting images that stand the test of time.
           </p>
           <p className="about-intro__body">
-            Based in Lagos, Nigeria, I collaborate with clients who value depth,
+            Based in AkwaIbom, Nigeria, I collaborate with clients who value depth,
             integrity, and visual narratives that go beyond the surface.
             Whether it's a couple's first dance or a brand campaign, I bring the
             same dedication to every frame.
@@ -58,7 +58,7 @@ function About() {
             </p>
             <p>
               After studying Visual Communication at the London College of
-              Communication, I returned home to launch E.k Pic — a studio
+              Communication, I returned home to launch E.k Pic. A studio
               dedicated to authentic, people-first photography. Over the past
               decade, I've had the privilege of working across 12 African
               countries, documenting stories that celebrate heritage, resilience,
