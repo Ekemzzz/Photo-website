@@ -4,14 +4,18 @@ import PropTypes from 'prop-types'
  * Reusable gallery item — renders a single portfolio image
  * with a hover overlay and click handler for the lightbox.
  */
-function GalleryItem({ src, alt, onClick }) {
+function GalleryItem({ src, alt, onClick, objectPosition, forceSquare }) {
   return (
-    <div className="gallery-item" onClick={onClick}>
+    <div
+      className={`gallery-item${forceSquare ? ' gallery-item--square' : ''}`}
+      onClick={onClick}
+    >
       <img
         className="gallery-item__image"
         src={src}
         alt={alt}
         loading="lazy"
+        style={objectPosition ? { objectPosition } : undefined}
       />
       <div className="gallery-item__overlay">
         <svg
@@ -40,6 +44,8 @@ GalleryItem.propTypes = {
   src: PropTypes.string.isRequired,
   alt: PropTypes.string.isRequired,
   onClick: PropTypes.func,
+  objectPosition: PropTypes.string,
+  forceSquare: PropTypes.bool,
 }
 
 export default GalleryItem

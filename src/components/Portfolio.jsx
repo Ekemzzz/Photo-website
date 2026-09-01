@@ -1,16 +1,30 @@
-import { useState, useMemo, useCallback } from 'react'
+import { useState, useMemo, useCallback, useEffect } from 'react'
+import { useLocation } from 'react-router-dom'
 import GalleryItem from './GalleryItem'
 import Lightbox from './Lightbox'
 import portfolioImages from '../data/portfolio'
 
-const filters = ['all', 'weddings', 'portraits', 'events', 'fashion']
+const filters = ['all', 'weddings', 'events', 'birthdays', 'others']
 
 /**
  * Portfolio section — filterable image gallery with lightbox.
  * Uses reusable GalleryItem and Lightbox components.
+ * Reads the URL hash to pre-select a category filter.
  */
 function Portfolio() {
-  const [activeFilter, setActiveFilter] = useState('all')
+  const location = useLocation()
+  const [activeFilter, setActiveFilter] = useState(() => {
+    const hash = window.location.hash.replace('#', '')
+    return filters.includes(hash) ? hash : 'all'
+  })
+
+  // Sync filter when hash changes (e.g. clicking a category card)
+  useEffect(() => {
+    const hash = location.hash.replace('#', '')
+    if (filters.includes(hash)) {
+      setActiveFilter(hash)
+    }
+  }, [location.hash])
   const [lightboxIndex, setLightboxIndex] = useState(null)
 
   const filteredImages = useMemo(() => {
@@ -63,6 +77,8 @@ function Portfolio() {
             key={image.id}
             src={image.src}
             alt={image.alt}
+            objectPosition={image.objectPosition}
+            forceSquare={image.forceSquare}
             onClick={() => openLightbox(index)}
           />
         ))}

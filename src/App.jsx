@@ -8,6 +8,8 @@ import About from './pages/About'
 import Services from './pages/Services'
 import Contact from './pages/Contact'
 
+const portfolioFilters = ['weddings', 'events', 'birthdays', 'others']
+
 /**
  * Handles scrolling to hash anchors and scrolling to top on page navigation.
  */
@@ -15,10 +17,18 @@ function ScrollManager() {
   const location = useLocation()
 
   useEffect(() => {
-    const hash = location.hash
+    const hash = location.hash.replace('#', '')
     if (hash) {
-      // Small delay to allow the DOM to render before scrolling
-      const el = document.querySelector(hash)
+      // If hash is a portfolio filter, scroll to the portfolio section
+      if (portfolioFilters.includes(hash)) {
+        setTimeout(() => {
+          const el = document.getElementById('portfolio')
+          if (el) el.scrollIntoView({ behavior: 'smooth' })
+        }, 100)
+        return
+      }
+      // Otherwise try to find the element by id
+      const el = document.getElementById(hash)
       if (el) {
         setTimeout(() => el.scrollIntoView({ behavior: 'smooth' }), 100)
         return

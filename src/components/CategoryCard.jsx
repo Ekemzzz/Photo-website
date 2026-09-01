@@ -1,12 +1,26 @@
+import { useNavigate } from 'react-router-dom'
 import PropTypes from 'prop-types'
 
 /**
  * Reusable card for displaying a photography category.
- * Renders an image, title, description, and interactive arrow icon.
+ * Clicking scrolls to the portfolio section and applies the matching filter.
  */
 function CategoryCard({ image, title, description, href }) {
+  const navigate = useNavigate()
+
+  function handleClick(e) {
+    e.preventDefault()
+    const hash = href || `#${title.toLowerCase()}`
+    // Navigate to home with hash so Portfolio picks it up, then scroll
+    navigate(`/${hash}`)
+    setTimeout(() => {
+      const el = document.getElementById('portfolio')
+      if (el) el.scrollIntoView({ behavior: 'smooth' })
+    }, 100)
+  }
+
   return (
-    <a className="category-card" href={href || `#${title.toLowerCase()}`}>
+    <a className="category-card" href={href} onClick={handleClick}>
       <img
         className="category-card__image"
         src={image}
