@@ -39,14 +39,8 @@ const portfolioImages = [
   },
   {
     id: 5,
-    src: 'https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=800&h=800&fit=crop',
-    alt: 'Concert crowd with colorful lights',
-    category: 'events',
-  },
-  {
-    id: 6,
-    src: 'https://images.unsplash.com/photo-1511578314322-379afb476865?w=800&h=600&fit=crop',
-    alt: 'Corporate event networking session',
+    src: '/images/events/event-4.jpg',
+    alt: 'Event celebration coverage',
     category: 'events',
   },
   {
@@ -69,20 +63,14 @@ const portfolioImages = [
   },
   {
     id: 10,
-    src: 'https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=800&h=1000&fit=crop',
-    alt: 'Family gathering portrait',
+    src: '/images/others/other-1.jpg',
+    alt: 'Creative lifestyle shoot',
     category: 'others',
   },
   {
     id: 11,
-    src: 'https://images.unsplash.com/photo-1511632765486-a01980e01a18?w=800&h=800&fit=crop',
-    alt: 'Group of friends outdoor shoot',
-    category: 'others',
-  },
-  {
-    id: 12,
-    src: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=800&h=1000&fit=crop',
-    alt: 'Creative lifestyle photography',
+    src: '/images/others/other-2.jpg',
+    alt: 'Special moments photography',
     category: 'others',
   },
 ]

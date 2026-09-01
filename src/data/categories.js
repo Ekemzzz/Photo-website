@@ -24,7 +24,7 @@ const categories = [
     id: 4,
     title: 'Others',
     description: 'From family gatherings to creative shoots — every moment worth preserving.',
-    image: 'https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=800&h=600&fit=crop',
+    image: '/images/others/other-1.jpg',
     href: '#others',
   },
 ]

@@ -24,9 +24,12 @@ function Lightbox({ images, currentIndex, onClose, onPrev, onNext }) {
     }
   }, [handleKeyDown])
 
-  if (!images.length) return null
+  if (!images || !images.length) return null
 
-  const image = images[currentIndex]
+  const safeIndex = Math.max(0, Math.min(currentIndex, images.length - 1))
+  const image = images[safeIndex]
+
+  if (!image || !image.src) return null
 
   return (
     <div className="lightbox" onClick={onClose}>
