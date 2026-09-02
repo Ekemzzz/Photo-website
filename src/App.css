@@ -3128,3 +3128,86 @@
     gap: 16px;
   }
 }
+
+/* ── 404 Not Found Page ── */
+.not-found {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 70vh;
+  padding: 80px 32px;
+  text-align: center;
+}
+
+.not-found__content {
+  max-width: 520px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.not-found__code {
+  font-family: var(--heading);
+  font-size: clamp(5rem, 18vw, 9rem);
+  font-weight: 700;
+  color: var(--accent);
+  line-height: 1;
+  opacity: 0.25;
+  margin-bottom: 16px;
+  letter-spacing: -4px;
+}
+
+.not-found__title {
+  font-family: var(--heading);
+  font-size: clamp(1.6rem, 4vw, 2.2rem);
+  font-weight: 700;
+  color: var(--text-h);
+  margin: 0 0 16px;
+}
+
+.not-found__body {
+  font-size: 1rem;
+  line-height: 1.75;
+  color: var(--text);
+  margin: 0 0 36px;
+}
+
+.not-found__actions {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.not-found__btn {
+  display: inline-block;
+  padding: 13px 32px;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.not-found__btn--primary {
+  background: var(--accent);
+  color: #ffffff;
+  border: 2px solid var(--accent);
+}
+
+.not-found__btn--primary:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+}
+
+.not-found__btn--secondary {
+  background: transparent;
+  color: var(--text-h);
+  border: 2px solid var(--border);
+}
+
+.not-found__btn--secondary:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+  transform: translateY(-2px);
+}
