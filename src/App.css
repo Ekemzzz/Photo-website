@@ -1372,7 +1372,20 @@
    ═══════════════════════════════════════════════════════════════ */
 
 /* ── Services Hero ── */
-.services-hero,
+.services-hero {
+  position: relative;
+  width: 100%;
+  height: 48vh;
+  min-height: 320px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('/images/services-hero-bg.jpg');
+  background-size: cover;
+  background-position: center right;
+  overflow: hidden;
+}
+
 .contact-hero {
   position: relative;
   width: 100%;
@@ -1385,7 +1398,16 @@
   overflow: hidden;
 }
 
-.services-hero__overlay,
+.services-hero__overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(10, 10, 16, 0.45) 0%,
+    rgba(10, 10, 16, 0.75) 100%
+  );
+}
+
 .contact-hero__overlay {
   position: absolute;
   inset: 0;
@@ -1422,6 +1444,10 @@
   margin: 0;
   font-weight: 400;
   text-shadow: 0 1px 8px rgba(0, 0, 0, 0.35);
+}
+
+.services-hero__title {
+  margin-bottom: 40px;
 }
 
 /* ── Services List Section ── */
@@ -2791,7 +2817,7 @@
 /* ── Final CTA ── */
 .services-final-cta {
   position: relative;
-  padding: 100px 32px;
+  padding: 40px 32px;
   display: flex;
   align-items: center;
   justify-content: center;

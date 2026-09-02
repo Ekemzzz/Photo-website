@@ -4,7 +4,6 @@ import services from '../data/services'
 import packages from '../data/packages'
 import testimonials from '../data/testimonials'
 import addons from '../data/addons'
-import serviceFaq from '../data/serviceFaq'
 
 const PROCESS_STEPS = [
   {
@@ -244,24 +243,85 @@ function Services() {
       <section className="services-faq">
         <div className="services-faq__inner">
           <div className="services-section-header">
-            <h2 className="services-section-header__title">Service FAQ</h2>
+            <h2 className="services-section-header__title">Frequently Asked Questions</h2>
             <p className="services-section-header__subtitle">
               Quick answers to common questions about our packages and process.
             </p>
           </div>
 
           <div className="services-faq__list">
-            {serviceFaq.map((item, index) => (
-              <details key={index} className="services-faq__item">
-                <summary className="services-faq__question">
-                  {item.question}
-                  <span className="services-faq__icon">+</span>
-                </summary>
-                <div className="services-faq__answer">
-                  <p>{item.answer}</p>
-                </div>
-              </details>
-            ))}
+            <details className="services-faq__item">
+              <summary className="services-faq__question">
+                What is your availability like?
+                <span className="services-faq__icon">+</span>
+              </summary>
+              <div className="services-faq__answer">
+                <p>
+                  I typically book 2–4 weeks in advance for any shooting sessions,
+                  so I recommend reaching out early. For last-minute requests, get
+                  in touch and I'll do my best to accommodate.
+                </p>
+              </div>
+            </details>
+
+            <details className="services-faq__item">
+              <summary className="services-faq__question">
+                Do you travel for shoots?
+                <span className="services-faq__icon">+</span>
+              </summary>
+              <div className="services-faq__answer">
+                <p>
+                  Absolutely! I've worked across 5 states in Nigeria and I am also
+                  open to working internationally whenever the opportunity comes.
+                  Travel fees vary depending on the location and duration of the project.
+                </p>
+              </div>
+            </details>
+
+            <details className="services-faq__item">
+              <summary className="services-faq__question">
+                How does your pricing work?
+                <span className="services-faq__icon">+</span>
+              </summary>
+              <div className="services-faq__answer">
+                <p>
+                  I offer tailored packages for each category — Weddings, Events,
+                  Birthdays, and more. Prices vary depending on the scope, location,
+                  and deliverables. After an initial consultation, I provide a
+                  detailed quote with no hidden costs.
+                </p>
+              </div>
+            </details>
+
+            <details className="services-faq__item">
+              <summary className="services-faq__question">
+                How long until I receive my photos?
+                <span className="services-faq__icon">+</span>
+              </summary>
+              <div className="services-faq__answer">
+                <p>
+                  Since I want to give you a satisfactory outcome of what you paid
+                  for, your pictures are delivered within 72 hours. Rush delivery
+                  is available for an additional fee if you need them sooner.
+                </p>
+              </div>
+            </details>
+
+            <details className="services-faq__item">
+              <summary className="services-faq__question">
+                Can I request specific edits or retouching?
+                <span className="services-faq__icon">+</span>
+              </summary>
+              <div className="services-faq__answer">
+                <p>
+                  Of course. All packages include professional colour grading and
+                  basic retouching. Advanced retouching — skin smoothing, background
+                  changes, composite edits — is available as an add-on. I always
+                  share a proof gallery before final delivery so you can flag any
+                  preferences.
+                </p>
+              </div>
+            </details>
           </div>
         </div>
       </section>
