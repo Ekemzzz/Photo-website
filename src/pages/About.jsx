@@ -31,13 +31,13 @@ function About() {
           <h2 className="about-intro__heading">Hello, I'm E.k</h2>
           <p className="about-intro__body">
             I'm a passionate visual storyteller whose lens captures the soul of
-            every moment,the quiet intimacy of a wedding vow, the raw energy
+            every moment, the quiet intimacy of a wedding vow, the raw energy
             of a live event, and the bold confidence of a fashion editorial.
             My work bridges artistry and authenticity, honouring real emotion
             while crafting images that stand the test of time.
           </p>
           <p className="about-intro__body">
-            Based in AkwaIbom, Nigeria, I collaborate with clients who value depth,
+            Based in Akwa-Ibom, Nigeria, I collaborate with clients who value depth,
             integrity, and visual narratives that go beyond the surface.
             Whether it's a couple's first dance or a brand campaign, I bring the
             same dedication to every frame.
@@ -51,25 +51,17 @@ function About() {
           <h2 className="about-section__title">My Journey</h2>
           <div className="about-bio__content">
             <p>
-              Born and raised in Lagos, I picked up my first camera at age 16,
-              captivated by the vibrant street life and rich cultural tapestry of
-              West Africa. What started as a teenage curiosity quickly became a
-              lifelong pursuit.
+              Born and raised in Akwa-Ibom (Nigeria), I picked up my first camera at age 18,
+              captivated by the vibrant street life and beauty of my surroundings,
+              what started as a teenage curiosity quickly became a lifelong pursuit.
             </p>
             <p>
-              After studying Visual Communication at the London College of
-              Communication, I returned home to launch E.k Pic. A studio
-              dedicated to authentic, people-first photography. Over the past
-              decade, I've had the privilege of working across 12 African
-              countries, documenting stories that celebrate heritage, resilience,
-              and beauty.
+              After six months of camera training, I was finally able to launch
+              E.k Pic, a studio where realistic images capture real views and stories.
             </p>
             <p>
               Today, I mentor emerging photographers and lead community-based
               photo projects that give voice to underrepresented narratives.
-              My work has been featured in international publications, gallery
-              exhibitions, and campaigns for brands that share my commitment to
-              visual authenticity.
             </p>
           </div>
         </div>
@@ -86,7 +78,7 @@ function About() {
           </span>
           <h2 className="about-section__title">My Philosophy</h2>
           <blockquote className="about-philosophy__quote">
-            "I believe every frame holds a truth waiting to be revealed — not
+            "I believe every frame holds a truth waiting to be revealed, not
             just what is seen, but what is felt. I don't photograph people;
             I co-create moments with them."
           </blockquote>
@@ -94,8 +86,7 @@ function About() {
             My approach centres on empathy, respect, and collaboration.
             Light, texture, and emotion are my primary tools; narrative is my
             compass. I take the time to understand each client's story before
-            the shutter clicks, because the best photographs aren't taken —
-            they're built on trust.
+            the shutter clicks, because the best photographs aren't taken, they're built on trust.
           </p>
         </div>
       </section>
@@ -105,28 +96,24 @@ function About() {
         <h2 className="about-section__title about-section__title--light">By the Numbers</h2>
         <div className="about-stats__grid">
           <div className="about-stats__card">
-            <span className="about-stats__number">10+</span>
+            <span className="about-stats__number">5+</span>
             <span className="about-stats__label">Years of Experience</span>
           </div>
           <div className="about-stats__card">
-            <span className="about-stats__number">500+</span>
+            <span className="about-stats__number">300+</span>
             <span className="about-stats__label">Published Images</span>
           </div>
           <div className="about-stats__card">
-            <span className="about-stats__number">30+</span>
+            <span className="about-stats__number">10+</span>
             <span className="about-stats__label">Exhibitions Worldwide</span>
           </div>
           <div className="about-stats__card">
-            <span className="about-stats__number">120+</span>
+            <span className="about-stats__number">100+</span>
             <span className="about-stats__label">Happy Clients</span>
           </div>
           <div className="about-stats__card">
-            <span className="about-stats__number">12</span>
-            <span className="about-stats__label">Countries Covered</span>
-          </div>
-          <div className="about-stats__card">
-            <span className="about-stats__number">1</span>
-            <span className="about-stats__label">African Photography Award</span>
+            <span className="about-stats__number">4</span>
+            <span className="about-stats__label">States Covered</span>
           </div>
         </div>
       </section>
@@ -142,9 +129,8 @@ function About() {
             </summary>
             <div className="about-faq__answer">
               <p>
-                I typically book 2–4 weeks in advance for portrait sessions and
-                2–3 months for weddings and events. Peak season (October–March)
-                fills up fast, so I recommend reaching out early. For last-minute
+                I typically book 2–4 weeks in advance for any shooting sessions and, 
+                so I recommend reaching out early. For last-minute
                 requests, get in touch and I'll do my best to accommodate.
               </p>
             </div>
@@ -157,10 +143,9 @@ function About() {
             </summary>
             <div className="about-faq__answer">
               <p>
-                Absolutely! I've worked across 12 African countries and
-                internationally. Travel fees vary depending on the location and
-                duration of the project. Destination weddings and editorial trips
-                are some of my favourite work — let's discuss the details.
+                Absolutely! I've worked across 5 states in Nigeria and i am also opened
+                to working internationally whenever the opportunity comes. Travel fees vary 
+                depending on the location and duration of the project. 
               </p>
             </div>
           </details>
@@ -172,10 +157,10 @@ function About() {
             </summary>
             <div className="about-faq__answer">
               <p>
-                I offer tailored packages for each category — weddings, portraits,
-                events, and fashion. Pricing depends on the scope, location, and
+                I offer tailored packages for each category. Weddings, Portraits,
+                Events, Fashion etc, Prices varies depending on the scope, location, and
                 deliverables. After an initial consultation, I provide a detailed
-                quote with no hidden costs. Sessions start from ₦150,000.
+                quote with no hidden costs.
               </p>
             </div>
           </details>
@@ -187,28 +172,14 @@ function About() {
             </summary>
             <div className="about-faq__answer">
               <p>
-                Portrait sessions are delivered within 7–10 business days.
-                Weddings and events typically take 3–4 weeks due to the volume
-                of images. Rush delivery is available for an additional fee if
+                Since i have to give you a satisfactory outcome of what you paid for,  
+                in the next 72 hours, your pictures are delivered.
+                Although, rush delivery is available for an additional fee if
                 you need them sooner.
               </p>
             </div>
           </details>
 
-          <details className="about-faq__item">
-            <summary className="about-faq__question">
-              What should I wear or prepare for a session?
-              <span className="about-faq__icon">+</span>
-            </summary>
-            <div className="about-faq__answer">
-              <p>
-                Before every shoot, I send a detailed preparation guide covering
-                wardrobe tips, colour palettes, and location advice. For fashion
-                and editorial work, I collaborate closely with stylists and
-                creative directors to nail the vision.
-              </p>
-            </div>
-          </details>
 
           <details className="about-faq__item">
             <summary className="about-faq__question">
@@ -218,8 +189,8 @@ function About() {
             <div className="about-faq__answer">
               <p>
                 Of course. All packages include professional colour grading and
-                basic retouching. Advanced retouching — skin smoothing, background
-                changes, composite edits — is available as an add-on. I always
+                basic retouching. Advanced retouching, skin smoothing, background
+                changes, composite edits is available as an add-on. I always
                 share a proof gallery before final delivery so you can flag any
                 preferences.
               </p>

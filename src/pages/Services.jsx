@@ -35,9 +35,9 @@ const PROCESS_STEPS = [
 
 const WHY_CHOOSE = [
   {
-    title: '10+ Years Experience',
+    title: '5+ Years Experience',
     description:
-      'A decade of capturing weddings, portraits, events, and editorials across Africa.',
+      'Five years of capturing weddings, portraits, events, and editorials.',
   },
   {
     title: 'Award-Winning Work',
