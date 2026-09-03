@@ -16,13 +16,11 @@
   content: '';
   position: absolute;
   inset: 0;
-  background: repeating-linear-gradient(
-    90deg,
-    transparent,
-    transparent 40px,
-    rgba(255, 255, 255, 0.02) 40px,
-    rgba(255, 255, 255, 0.02) 80px
-  );
+  background: repeating-linear-gradient(90deg,
+      transparent,
+      transparent 40px,
+      rgba(255, 255, 255, 0.02) 40px,
+      rgba(255, 255, 255, 0.02) 80px);
   pointer-events: none;
 }
 
@@ -113,6 +111,7 @@
   &:hover {
     border-color: var(--accent-border);
   }
+
   &:focus-visible {
     outline: 2px solid var(--accent);
     outline-offset: 2px;
@@ -144,12 +143,10 @@
 .hero-section__overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(
-    180deg,
-    rgba(0, 0, 0, 0.35) 0%,
-    rgba(0, 0, 0, 0.15) 40%,
-    rgba(0, 0, 0, 0.55) 100%
-  );
+  background: linear-gradient(180deg,
+      rgba(0, 0, 0, 0.35) 0%,
+      rgba(0, 0, 0, 0.15) 40%,
+      rgba(0, 0, 0, 0.55) 100%);
   z-index: 1;
 }
 
@@ -274,8 +271,7 @@
     z-index: 1;
     top: 34px;
     height: 28px;
-    transform: perspective(2000px) rotateZ(300deg) rotateX(44deg) rotateY(39deg)
-      scale(1.4);
+    transform: perspective(2000px) rotateZ(300deg) rotateX(44deg) rotateY(39deg) scale(1.4);
   }
 
   .vite {
@@ -283,8 +279,7 @@
     top: 107px;
     height: 26px;
     width: auto;
-    transform: perspective(2000px) rotateZ(300deg) rotateX(40deg) rotateY(39deg)
-      scale(0.8);
+    transform: perspective(2000px) rotateZ(300deg) rotateX(40deg) rotateY(39deg) scale(0.8);
   }
 }
 
@@ -307,9 +302,10 @@
   border-top: 1px solid var(--border);
   text-align: left;
 
-  & > div {
+  &>div {
     flex: 1 1 0;
     padding: 32px;
+
     @media (max-width: 1024px) {
       padding: 24px 20px;
     }
@@ -362,6 +358,7 @@
     &:hover {
       box-shadow: var(--shadow);
     }
+
     .button-icon {
       height: 18px;
       width: 18px;
@@ -388,6 +385,7 @@
 #spacer {
   height: 88px;
   border-top: 1px solid var(--border);
+
   @media (max-width: 1024px) {
     height: 48px;
   }
@@ -409,6 +407,7 @@
     left: 0;
     border-left-color: var(--border);
   }
+
   &::after {
     right: 0;
     border-right-color: var(--border);
@@ -503,23 +502,19 @@
 .category-card__overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(
-    180deg,
-    rgba(0, 0, 0, 0.05) 0%,
-    rgba(0, 0, 0, 0.4) 50%,
-    rgba(0, 0, 0, 0.88) 100%
-  );
+  background: linear-gradient(180deg,
+      rgba(0, 0, 0, 0.05) 0%,
+      rgba(0, 0, 0, 0.4) 50%,
+      rgba(0, 0, 0, 0.88) 100%);
   z-index: 1;
   transition: opacity 0.35s ease;
 }
 
 .category-card:hover .category-card__overlay {
-  background: linear-gradient(
-    180deg,
-    rgba(0, 0, 0, 0.1) 0%,
-    rgba(0, 0, 0, 0.55) 40%,
-    rgba(0, 0, 0, 0.95) 100%
-  );
+  background: linear-gradient(180deg,
+      rgba(0, 0, 0, 0.1) 0%,
+      rgba(0, 0, 0, 0.55) 40%,
+      rgba(0, 0, 0, 0.95) 100%);
 }
 
 .category-card__content {
@@ -769,8 +764,13 @@
 }
 
 @keyframes lightbox-fade-in {
-  from { opacity: 0; }
-  to { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
 .lightbox__content {
@@ -876,11 +876,9 @@
 .about-hero__overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(
-    180deg,
-    rgba(10, 10, 16, 0.35) 0%,
-    rgba(10, 10, 16, 0.55) 100%
-  );
+  background: linear-gradient(180deg,
+      rgba(10, 10, 16, 0.35) 0%,
+      rgba(10, 10, 16, 0.55) 100%);
 }
 
 .about-hero__content {
@@ -1401,21 +1399,17 @@
 .services-hero__overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(
-    180deg,
-    rgba(10, 10, 16, 0.45) 0%,
-    rgba(10, 10, 16, 0.75) 100%
-  );
+  background: linear-gradient(180deg,
+      rgba(10, 10, 16, 0.45) 0%,
+      rgba(10, 10, 16, 0.75) 100%);
 }
 
 .contact-hero__overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(
-    180deg,
-    rgba(10, 10, 16, 0.4) 0%,
-    rgba(10, 10, 16, 0.65) 100%
-  );
+  background: linear-gradient(180deg,
+      rgba(10, 10, 16, 0.4) 0%,
+      rgba(10, 10, 16, 0.65) 100%);
 }
 
 .services-hero__content,
@@ -1488,17 +1482,18 @@
 .service-card {
   display: flex;
   flex-direction: column;
-  background: #ffffff;
+  background: var(--card-bg, #13141c);
   border-radius: 16px;
   overflow: hidden;
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
-  border: 1px solid var(--border);
-  transition: transform 0.35s ease, box-shadow 0.35s ease;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease;
 }
 
 .service-card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.14);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.45);
+  border-color: rgba(255, 255, 255, 0.2);
 }
 
 .service-card__image-wrapper {
@@ -1522,11 +1517,9 @@
 .service-card__image-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(
-    180deg,
-    rgba(26, 26, 46, 0) 40%,
-    rgba(26, 26, 46, 0.5) 100%
-  );
+  background: linear-gradient(180deg,
+      rgba(26, 26, 46, 0) 40%,
+      rgba(26, 26, 46, 0.5) 100%);
 }
 
 .service-card__content {
@@ -1743,6 +1736,7 @@
 }
 
 @media (max-width: 768px) {
+
   .services-hero,
   .contact-hero {
     height: 38vh;
@@ -1767,6 +1761,7 @@
 }
 
 @media (max-width: 480px) {
+
   .services-hero,
   .contact-hero {
     height: 32vh;
@@ -2324,6 +2319,7 @@
 }
 
 @media (max-width: 480px) {
+
   .contact-form-wrapper,
   .contact-info-card {
     padding: 24px 18px;
@@ -2829,11 +2825,9 @@
 .services-final-cta__overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(
-    180deg,
-    rgba(10, 10, 16, 0.5) 0%,
-    rgba(10, 10, 16, 0.7) 100%
-  );
+  background: linear-gradient(180deg,
+      rgba(10, 10, 16, 0.5) 0%,
+      rgba(10, 10, 16, 0.7) 100%);
 }
 
 .services-final-cta__content {
@@ -2880,6 +2874,7 @@
    Services Additions Responsive
    ═══════════════════════════════════════════════════════════════ */
 @media (max-width: 1024px) {
+
   .packages-grid,
   .testimonials-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -2899,6 +2894,7 @@
 }
 
 @media (max-width: 768px) {
+
   .services-packages,
   .services-process,
   .services-testimonials,

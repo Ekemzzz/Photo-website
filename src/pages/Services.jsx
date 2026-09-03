@@ -72,8 +72,10 @@ function Services() {
         <div className="services-list__header">
           <h2 className="services-list__title">Choose Your Experience</h2>
           <p className="services-list__subtitle">
-            Every package is crafted with care, flexibility, and a commitment to
-            exceptional results.
+            From weddings and portraits to events, birthdays, and creative
+            projects, each experience is designed to tell your story with
+            intention. Choose the service that fits your vision, then work with
+            us to tailor the coverage, details, and final gallery to your needs.
           </p>
         </div>
 

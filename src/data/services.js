@@ -4,8 +4,7 @@ const services = [
     name: 'Wedding Photography',
     description:
       'Timeless, emotionally charged coverage of your special day — from the quiet getting-ready moments to the lively reception dance floor.',
-    image:
-      'https://images.unsplash.com/photo-1519741497674-611481863552?w=800&h=600&fit=crop',
+    image: '/images/weddings/wedding-4.jpg',
     features: [
       'Full-day coverage (8–12 hours)',
       'Two professional photographers',
@@ -21,8 +20,7 @@ const services = [
     name: 'Portrait Sessions',
     description:
       'Personal, professional, and creative portraits that reveal character. Perfect for headshots, family sessions, or editorial portraits.',
-    image:
-      'https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=800&h=600&fit=crop',
+    image: '/images/birthdays/birthday-2.jpg',
     features: [
       '1–2 hour studio or location session',
       'Wardrobe consultation',
@@ -38,8 +36,7 @@ const services = [
     name: 'Event Coverage',
     description:
       'Corporate gatherings, concerts, conferences, and private celebrations captured with discretion, energy, and a sharp editorial eye.',
-    image:
-      'https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&h=600&fit=crop',
+    image: '/images/events/event-1.jpg',
     features: [
       'Half or full-day coverage',
       'Rapid turnaround options',
@@ -55,8 +52,7 @@ const services = [
     name: 'Fashion & Editorial',
     description:
       'Bold, campaign-ready imagery for designers, brands, models, and magazines. Creative direction and styling support available.',
-    image:
-      'https://images.unsplash.com/photo-1509631179647-0177331693ae?w=800&h=600&fit=crop',
+    image: '/images/fashion/fashion-1.jpg',
     features: [
       'Half or full-day editorial shoot',
       'Creative direction support',
