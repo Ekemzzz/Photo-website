@@ -2562,7 +2562,7 @@
 /* ── Testimonials Section ── */
 .services-testimonials {
   padding: 80px 32px;
-  background: #ffffff;
+  background: var(--bg, #0b0c10);
 }
 
 .services-testimonials__inner {
@@ -2579,25 +2579,33 @@
 .testimonial-card {
   display: flex;
   flex-direction: column;
-  background: color-mix(in srgb, var(--bg) 98%, var(--accent));
-  border: 1px solid var(--border);
+  background: var(--card-bg, #13141c);
+  border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 16px;
   padding: 32px;
   margin: 0;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+  transition: transform 0.35s ease, border-color 0.35s ease, box-shadow 0.35s ease;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.45);
 }
 
 .testimonial-card__quote-icon {
   width: 32px;
   height: 32px;
   color: var(--accent);
-  opacity: 0.5;
+  opacity: 0.85;
   margin-bottom: 16px;
 }
 
 .testimonial-card__quote {
   font-size: 1rem;
   line-height: 1.75;
-  color: var(--text);
+  color: var(--text-h, #f4f4f8);
   margin: 0 0 24px;
   flex-grow: 1;
 }
@@ -2611,20 +2619,21 @@
 .testimonial-card__author {
   font-style: normal;
   font-weight: 700;
-  color: var(--text-h);
+  color: #ffffff;
   font-size: 0.95rem;
 }
 
 .testimonial-card__meta {
   font-size: 0.85rem;
-  color: var(--text);
-  opacity: 0.8;
+  color: var(--accent, #a855f7);
+  font-weight: 500;
+  opacity: 0.85;
 }
 
 /* ── Add-ons Section ── */
 .services-addons {
   padding: 80px 32px;
-  background: color-mix(in srgb, var(--bg) 98%, var(--accent));
+  background: var(--bg, #0b0c10);
 }
 
 .services-addons__inner {
@@ -2639,16 +2648,18 @@
 }
 
 .addon-card {
-  background: #ffffff;
-  border: 1px solid var(--border);
+  background: var(--card-bg, #13141c);
+  border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 14px;
   padding: 24px;
-  transition: border-color 0.25s, box-shadow 0.25s;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  transition: border-color 0.25s, box-shadow 0.25s, transform 0.25s;
 }
 
 .addon-card:hover {
-  border-color: var(--accent);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  border-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.35);
+  transform: translateY(-4px);
 }
 
 .addon-card__header {

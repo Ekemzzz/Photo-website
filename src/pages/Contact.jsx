@@ -158,7 +158,7 @@ function Contact() {
                         Select a service
                       </option>
                       <option value="wedding">Wedding Photography</option>
-                      <option value="portrait">Portrait Session</option>
+                      <option value="birthday">Birthday Session</option>
                       <option value="event">Event Coverage</option>
                       <option value="fashion">Fashion & Editorial</option>
                       <option value="other">Other</option>

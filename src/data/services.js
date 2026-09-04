@@ -3,11 +3,11 @@ const services = [
     id: 1,
     name: 'Wedding Photography',
     description:
-      'Timeless, emotionally charged coverage of your special day — from the quiet getting-ready moments to the lively reception dance floor.',
+      'Timeless, emotionally charged coverage of your special day, from the quiet getting-ready moments to the lively reception dance floor.',
     image: '/images/weddings/wedding-4.jpg',
     features: [
       'Full-day coverage (8–12 hours)',
-      'Two professional photographers',
+      'Drone Support',
       'Online gallery with high-res downloads',
       'Custom wedding album design',
       'Engagement session included',
@@ -17,18 +17,19 @@ const services = [
   },
   {
     id: 2,
-    name: 'Portrait Sessions',
+    name: 'Birthday-Sessions',
     description:
-      'Personal, professional, and creative portraits that reveal character. Perfect for headshots, family sessions, or editorial portraits.',
+      'Personal, professional, and creative birthday shots.',
     image: '/images/birthdays/birthday-2.jpg',
     features: [
       '1–2 hour studio or location session',
-      'Wardrobe consultation',
       'Professional retouching',
       '10 edited high-resolution images',
       'Same-day preview gallery',
+      'Video shots can come in aswell',
+
     ],
-    price: '₦150,000',
+    price: '₦100,000',
     href: '/contact',
   },
   {
@@ -60,7 +61,7 @@ const services = [
       '20+ retouched campaign images',
       'Commercial usage rights',
     ],
-    price: '₦500,000',
+    price: '₦300,000',
     href: '/contact',
   },
 ]

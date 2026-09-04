@@ -90,7 +90,7 @@ function Footer() {
             <h4 className="site-footer__heading">Services</h4>
             <ul className="site-footer__nav">
               <li><Link to="/services" className="site-footer__nav-link">Wedding Photography</Link></li>
-              <li><Link to="/services" className="site-footer__nav-link">Portrait Sessions</Link></li>
+              <li><Link to="/services" className="site-footer__nav-link">Birthday Sessions</Link></li>
               <li><Link to="/services" className="site-footer__nav-link">Event Coverage</Link></li>
               <li><Link to="/services" className="site-footer__nav-link">Fashion & Editorial</Link></li>
             </ul>

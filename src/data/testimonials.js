@@ -12,7 +12,7 @@ const testimonials = [
     quote:
       'Professional, creative, and incredibly easy to work with. The portraits exceeded every expectation we had.',
     author: 'Oluwaseun A.',
-    service: 'Portrait Session',
+    service: 'Birthday Session',
     location: 'Abuja, Nigeria',
   },
   {

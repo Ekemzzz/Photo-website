@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom'
 import ServiceCard from '../components/ServiceCard'
 import services from '../data/services'
-import packages from '../data/packages'
 import testimonials from '../data/testimonials'
 import addons from '../data/addons'
 
@@ -91,55 +90,6 @@ function Services() {
               href={service.href}
             />
           ))}
-        </div>
-      </section>
-
-      <section className="services-packages">
-        <div className="services-packages__inner">
-          <div className="services-section-header">
-            <h2 className="services-section-header__title">Package Tiers</h2>
-            <p className="services-section-header__subtitle">
-              Clear, flexible options designed to match your needs and scale
-              with your vision.
-            </p>
-          </div>
-
-          <div className="packages-grid">
-            {packages.map((pkg) => (
-              <article
-                key={pkg.id}
-                className={`package-card ${pkg.popular ? 'is-popular' : ''}`}
-              >
-                {pkg.popular && (
-                  <span className="package-card__badge">Most Popular</span>
-                )}
-                <h3 className="package-card__name">{pkg.name}</h3>
-                <p className="package-card__description">{pkg.description}</p>
-                <div className="package-card__price">{pkg.price}</div>
-                <ul className="package-card__features">
-                  {pkg.features.map((feature, index) => (
-                    <li key={index} className="package-card__feature">
-                      <svg
-                        className="package-card__check"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      >
-                        <polyline points="20 6 9 17 4 12" />
-                      </svg>
-                      <span>{feature}</span>
-                    </li>
-                  ))}
-                </ul>
-                <Link to="/contact" className="package-card__cta">
-                  Book This Package
-                </Link>
-              </article>
-            ))}
-          </div>
         </div>
       </section>
 
