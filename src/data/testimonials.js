@@ -2,10 +2,10 @@ const testimonials = [
   {
     id: 1,
     quote:
-      'E.k made our wedding day feel effortless. The photos are timeless — every time we look at them, we relive the joy.',
+      'E.k made our wedding day feel effortless. The photos are timeless every time we look at them, we relive the joy.',
     author: 'Amara & Chidi',
     service: 'Wedding Photography',
-    location: 'Lagos, Nigeria',
+    location: 'Akwaibom, Nigeria',
   },
   {
     id: 2,
@@ -13,7 +13,7 @@ const testimonials = [
       'Professional, creative, and incredibly easy to work with. The portraits exceeded every expectation we had.',
     author: 'Oluwaseun A.',
     service: 'Birthday Session',
-    location: 'Abuja, Nigeria',
+    location: 'Portharcourt, Nigeria',
   },
   {
     id: 3,

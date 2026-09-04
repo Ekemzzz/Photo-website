@@ -2695,7 +2695,7 @@
 /* ── Why Choose Section ── */
 .services-why {
   padding: 80px 32px;
-  background: linear-gradient(135deg, #1a1a2e 0%, #2d1f3d 50%, #1a1a2e 100%);
+  background: var(--bg, #0b0c10);
 }
 
 .services-why__inner {
@@ -2711,21 +2711,51 @@
 
 .why-card {
   text-align: center;
-  padding: 28px 20px;
+  padding: 32px 24px;
+  background: var(--card-bg, #13141c);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+  transition: transform 0.35s ease, border-color 0.35s ease, box-shadow 0.35s ease;
+}
+
+.why-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.45);
+}
+
+.why-card__icon-box {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  background: rgba(168, 85, 247, 0.12);
+  border: 1px solid rgba(168, 85, 247, 0.25);
+  color: var(--accent, #a855f7);
+  margin-bottom: 20px;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.why-card:hover .why-card__icon-box {
+  transform: scale(1.1);
+  background: rgba(168, 85, 247, 0.22);
 }
 
 .why-card__title {
   font-family: var(--heading);
   font-size: 1.15rem;
   font-weight: 700;
-  color: #ffffff;
+  color: var(--text-h, #f4f4f8);
   margin: 0 0 10px;
 }
 
 .why-card__description {
   font-size: 0.92rem;
   line-height: 1.65;
-  color: rgba(255, 255, 255, 0.75);
+  color: var(--text, #a0a5b5);
   margin: 0;
 }
 
@@ -2734,7 +2764,7 @@
   padding: 80px 32px;
   max-width: 850px;
   margin: 0 auto;
-  background: #ffffff;
+  background: var(--bg, #0b0c10);
 }
 
 .services-faq__inner {
@@ -2744,36 +2774,40 @@
 .services-faq__list {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 14px;
 }
 
 .services-faq__item {
-  border: 1px solid var(--border);
-  border-radius: 12px;
+  background: var(--card-bg, #13141c);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 14px;
   overflow: hidden;
-  transition: border-color 0.3s;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .services-faq__item:hover {
-  border-color: var(--accent);
+  border-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 14px 36px rgba(0, 0, 0, 0.35);
 }
 
 .services-faq__item[open] {
-  border-color: var(--accent);
+  border-color: var(--accent, #a855f7);
+  box-shadow: 0 14px 40px rgba(168, 85, 247, 0.15);
 }
 
 .services-faq__question {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 18px 22px;
-  font-size: 1rem;
+  padding: 20px 24px;
+  font-size: 1.05rem;
   font-weight: 600;
-  color: var(--text-h);
+  color: var(--text-h, #f4f4f8);
   cursor: pointer;
   list-style: none;
   user-select: none;
-  transition: background 0.2s;
+  transition: background 0.2s ease;
 }
 
 .services-faq__question::-webkit-details-marker {
@@ -2786,39 +2820,41 @@
 }
 
 .services-faq__question:hover {
-  background: color-mix(in srgb, var(--accent) 6%, transparent);
+  background: rgba(255, 255, 255, 0.04);
 }
 
 .services-faq__icon {
-  width: 26px;
-  height: 26px;
+  width: 28px;
+  height: 28px;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  font-size: 16px;
-  font-weight: 300;
-  color: var(--accent);
-  border: 1px solid var(--border);
-  transition: transform 0.3s, background 0.3s, color 0.3s;
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--accent, #a855f7);
+  border: 1px solid rgba(168, 85, 247, 0.3);
+  background: rgba(168, 85, 247, 0.1);
+  transition: transform 0.3s ease, background 0.3s ease, color 0.3s ease;
 }
 
 .services-faq__item[open] .services-faq__icon {
   transform: rotate(45deg);
-  background: var(--accent);
+  background: var(--accent, #a855f7);
   color: #ffffff;
-  border-color: var(--accent);
+  border-color: var(--accent, #a855f7);
 }
 
 .services-faq__answer {
-  padding: 0 22px 18px;
+  padding: 0 24px 20px;
 }
 
 .services-faq__answer p {
-  font-size: 0.95rem;
+  font-size: 0.96rem;
   line-height: 1.75;
-  color: var(--text);
+  color: var(--text-h, #f4f4f8);
   margin: 0;
+  opacity: 0.9;
 }
 
 /* ── Final CTA ── */
