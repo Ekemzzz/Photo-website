@@ -35,21 +35,11 @@ const WHY_CHOOSE = [
   {
     title: '5+ Years Experience',
     description:
-      'Five years of capturing weddings, portraits, events, and editorials.',
+      'Five years of capturing weddings, events, birthdays, and creative sessions.',
     icon: (
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
         <circle cx="12" cy="8" r="7" />
         <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88" />
-      </svg>
-    ),
-  },
-  {
-    title: 'Award-Winning Work',
-    description:
-      'Recognized by the African Photography Award and featured in international publications.',
-    icon: (
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-        <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
       </svg>
     ),
   },

@@ -6,12 +6,12 @@ const MINI_FAQ = [
   {
     question: 'How far in advance should I book?',
     answer:
-      'We recommend booking 3–6 months ahead for weddings and 2–4 weeks for portraits and events. Last-minute requests are welcome when our calendar allows.',
+      'We recommend booking 2–4 weeks in advance for most sessions. For weddings and large events, reaching out earlier is always better to secure your date.',
   },
   {
-    question: 'Do you travel outside Lagos?',
+    question: 'Do you travel outside Akwa-Ibom?',
     answer:
-      'Absolutely. We regularly shoot across Nigeria and West Africa. Travel fees are calculated based on location and included in your custom quote.',
+      'Absolutely. We regularly shoot across Nigeria. Travel fees are calculated based on location and included in your custom quote.',
   },
   {
     question: 'What is your payment structure?',
@@ -369,7 +369,7 @@ function Contact() {
         <div className="contact-map__frame">
           <iframe
             title="E.k Pic Studio Location"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.574780575681!2d3.458563314770544!3d6.44690489533367!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103bf4d6a0e0c3c9%3A0x5e6c2e9b8d6e6c0e!2sLekki%20Phase%201%2C%20Lagos!5e0!3m2!1sen!2sng!4v1620000000000!5m2!1sen!2sng"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.1!2d7.9306!3d5.0278!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x105d5831b0a8f0b3%3A0x4d6c0c6c0c6c0c6c!2sUyo%2C%20Akwa%20Ibom%20State%2C%20Nigeria!5e0!3m2!1sen!2sng!4v1620000000000!5m2!1sen!2sng"
             width="100%"
             height="100%"
             style={{ border: 0 }}

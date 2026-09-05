@@ -32,7 +32,7 @@ function About() {
           <p className="about-intro__body">
             I'm a passionate visual storyteller whose lens captures the soul of
             every moment, the quiet intimacy of a wedding vow, the raw energy
-            of a live event, and the bold confidence of a fashion editorial.
+            of a live event, and the warmth of a birthday celebration.
             My work bridges artistry and authenticity, honouring real emotion
             while crafting images that stand the test of time.
           </p>

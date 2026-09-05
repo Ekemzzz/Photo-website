@@ -1,9 +1,6 @@
 import heroImg from '../assets/hero-image.jpg'
 import Categories from '../components/Categories'
 import Portfolio from '../components/Portfolio'
-import About from './About'
-import Services from './Services'
-import Contact from './Contact'
 
 function HomePage() {
   return (
@@ -15,10 +12,10 @@ function HomePage() {
         <div className="hero-section__content">
           <h1 className="hero-section__title">E.k Pic</h1>
           <p className="hero-section__subtitle">Capturing moments that tell stories</p>
-          <p className="hero-section__description">Professional photography for weddings, portraits, events and unforgettable moments</p>
+          <p className="hero-section__description">Professional photography for weddings, events, birthdays and every unforgettable moment</p>
           <div className="hero-section__actions">
             <a href="#portfolio" className="hero-section__cta">View Portfolio</a>
-            <a href="#contact" className="hero-section__cta hero-section__cta--secondary">Book a Session</a>
+            <a href="/contact" className="hero-section__cta hero-section__cta--secondary">Book a Session</a>
           </div>
         </div>
       </section>
@@ -28,21 +25,6 @@ function HomePage() {
 
       {/* ── Portfolio Gallery Section ── */}
       <Portfolio />
-
-      {/* ── About Section ── */}
-      <div id="about">
-        <About />
-      </div>
-
-      {/* ── Services & Packages Section ── */}
-      <div id="services">
-        <Services />
-      </div>
-
-      {/* ── Contact & Booking Section ── */}
-      <div id="contact">
-        <Contact />
-      </div>
     </div>
   )
 }

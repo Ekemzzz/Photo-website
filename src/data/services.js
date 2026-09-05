@@ -17,17 +17,16 @@ const services = [
   },
   {
     id: 2,
-    name: 'Birthday-Sessions',
+    name: 'Birthday Sessions',
     description:
-      'Personal, professional, and creative birthday shots.',
+      'Personal, professional, and creative birthday shots that capture the joy and energy of your celebration.',
     image: '/images/birthdays/birthday-2.jpg',
     features: [
       '1–2 hour studio or location session',
       'Professional retouching',
       '10 edited high-resolution images',
       'Same-day preview gallery',
-      'Video shots can come in aswell',
-
+      'Video shots available as well',
     ],
     price: '₦100,000',
     href: '/contact',
@@ -50,18 +49,18 @@ const services = [
   },
   {
     id: 4,
-    name: 'Fashion & Editorial',
+    name: 'Others',
     description:
-      'Bold, campaign-ready imagery for designers, brands, models, and magazines. Creative direction and styling support available.',
-    image: '/images/fashion/fashion-1.jpg',
+      'From family portraits and creative shoots to brand campaigns and personal projects — every story deserves a great image.',
+    image: '/images/others/other-1.jpg',
     features: [
-      'Half or full-day editorial shoot',
-      'Creative direction support',
-      'Stylist & makeup artist referrals',
-      '20+ retouched campaign images',
-      'Commercial usage rights',
+      'Flexible session duration',
+      'Studio or outdoor location',
+      'Professional retouching',
+      '15+ edited high-resolution images',
+      'Usage rights included',
     ],
-    price: '₦300,000',
+    price: '₦150,000',
     href: '/contact',
   },
 ]

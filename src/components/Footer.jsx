@@ -53,7 +53,7 @@ function Footer() {
             </Link>
             <p className="site-footer__tagline">
               Capturing moments that tell stories. Professional photography for
-              weddings, portraits, events, and unforgettable moments.
+              weddings, events, birthdays, and every unforgettable moment.
             </p>
             <div className="site-footer__socials">
               {SOCIAL_LINKS.map((link) => (
@@ -92,7 +92,7 @@ function Footer() {
               <li><Link to="/services" className="site-footer__nav-link">Wedding Photography</Link></li>
               <li><Link to="/services" className="site-footer__nav-link">Birthday Sessions</Link></li>
               <li><Link to="/services" className="site-footer__nav-link">Event Coverage</Link></li>
-              <li><Link to="/services" className="site-footer__nav-link">Fashion, Editorial, etc...</Link></li>
+              <li><Link to="/services" className="site-footer__nav-link">Others</Link></li>
             </ul>
           </div>
 
