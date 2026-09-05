@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import { useState } from 'react'
+import photographerImg from '../assets/photographer.png'
 
 const MINI_FAQ = [
   {
@@ -41,12 +42,11 @@ const SOCIAL_LINKS = [
     ),
   },
   {
-    name: 'Pinterest',
-    href: 'https://pinterest.com/ekpic',
+    name: 'TikTok',
+    href: 'https://tiktok.com/@ekpic',
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-        <line x1="12" y1="8" x2="12" y2="21" />
-        <path d="M5 12.5C5 12.5 6.5 11 9.5 11C13.5 11 15 13.5 15 16C15 18.5 13 21 9.5 21C6 21 4 18.5 4 15.5C4 12.5 6 8 12 5C12 5 19 2 19 9C19 12 16 13.5 14 13" />
+        <path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5" />
       </svg>
     ),
   },
@@ -118,7 +118,7 @@ function Contact() {
                       name="name"
                       value={formData.name}
                       onChange={handleChange}
-                      placeholder="Jane Doe"
+                      placeholder="Name"
                       required
                     />
                   </label>
@@ -129,7 +129,7 @@ function Contact() {
                       name="email"
                       value={formData.email}
                       onChange={handleChange}
-                      placeholder="jane@example.com"
+                      placeholder="Email"
                       required
                     />
                   </label>
@@ -143,7 +143,7 @@ function Contact() {
                       name="phone"
                       value={formData.phone}
                       onChange={handleChange}
-                      placeholder="+234 801 234 5678"
+                      placeholder="Phone No."
                     />
                   </label>
                   <label className="contact-form__field">
@@ -183,7 +183,7 @@ function Contact() {
                       name="location"
                       value={formData.location}
                       onChange={handleChange}
-                      placeholder="Lagos, Nigeria"
+                      placeholder="State of Residence"
                     />
                   </label>
                 </div>
@@ -237,24 +237,24 @@ function Contact() {
                   <span className="contact-info-item__label">Email</span>
                   <a
                     className="contact-info-item__value"
-                    href="mailto:hello@ekpic.studio"
+                    href="mailto:ekemini456@gmail.com"
                   >
-                    hello@ekpic.studio
+                    ekemini456@gmail.com
                   </a>
                 </div>
                 <div className="contact-info-item">
                   <span className="contact-info-item__label">Phone</span>
                   <a
                     className="contact-info-item__value"
-                    href="tel:+2348012345678"
+                    href="tel:+2349066287219"
                   >
-                    +234 801 234 5678
+                    +234 906 628 7219
                   </a>
                 </div>
                 <div className="contact-info-item">
                   <span className="contact-info-item__label">Studio</span>
                   <span className="contact-info-item__value">
-                    12A Admiralty Way, Lekki Phase 1, Lagos, Nigeria
+                    104, Abak rd, Uyo, Akwa-Ibom, Nigeria
                   </span>
                 </div>
               </div>
@@ -290,7 +290,7 @@ function Contact() {
                   </li>
                   <li>
                     <span>Sunday</span>
-                    <span>Closed</span>
+                    <span>2:00 PM - 6:00 PM</span>
                   </li>
                 </ul>
               </div>
@@ -325,16 +325,14 @@ function Contact() {
               <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
             </svg>
             <blockquote>
-              E.k captured our wedding with such artistry. Every image feels like
-              a scene from a film. We couldn&apos;t have asked for a better
-              storyteller.
+              E.k made our wedding day feel effortless. The photos are timeless every time we look at them, we relive the joy.
             </blockquote>
-            <cite>— Amara &amp; Chidi, Lagos Wedding</cite>
+            <cite>Amara &amp; Chidi</cite>
           </div>
 
           <div className="contact-trust__photographer">
             <img
-              src="/src/assets/photographer.png"
+              src={photographerImg}
               alt="E.k — Professional Photographer"
               className="contact-trust__avatar"
             />
@@ -342,9 +340,6 @@ function Contact() {
               <span className="contact-trust__name">E.k</span>
               <span className="contact-trust__role">
                 Founder &amp; Lead Photographer
-              </span>
-              <span className="contact-trust__award">
-                African Photography Award Winner
               </span>
             </div>
           </div>
