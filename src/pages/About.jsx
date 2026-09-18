@@ -4,7 +4,7 @@ import aboutHeroBg from '../assets/about-hero-bg.jpg'
 
 function About() {
   return (
-    <main className="about-page">
+    <div className="about-page" id="about">
       {/* ── Hero Banner ── */}
       <section
         className="about-hero"
@@ -126,15 +126,15 @@ function About() {
           consultation, portfolio review, or custom project proposal.
         </p>
         <div className="about-cta__actions">
-          <Link to="/contact" className="about-cta__btn about-cta__btn--primary">
+          <a href="#contact" className="about-cta__btn about-cta__btn--primary">
             Contact Me
-          </Link>
-          <Link to="/#portfolio" className="about-cta__btn about-cta__btn--secondary">
+          </a>
+          <a href="#portfolio" className="about-cta__btn about-cta__btn--secondary">
             View Portfolio
-          </Link>
+          </a>
         </div>
       </section>
-    </main>
+    </div>
   )
 }
 

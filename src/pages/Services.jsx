@@ -67,7 +67,7 @@ const WHY_CHOOSE = [
 
 function Services() {
   return (
-    <main className="services-page">
+    <div className="services-page" id="services">
       <section className="services-hero">
         <div className="services-hero__overlay"></div>
         <div className="services-hero__content">
@@ -78,7 +78,7 @@ function Services() {
         </div>
       </section>
 
-      <section className="services-list" id="services">
+      <section className="services-list" id="services-list">
         <div className="services-list__header">
           <h2 className="services-list__title">Choose Your Experience</h2>
           <p className="services-list__subtitle">
@@ -300,12 +300,12 @@ function Services() {
             Book a free 20-minute consultation. We will help you choose the
             perfect package for your story.
           </p>
-          <Link to="/contact" className="services-final-cta__btn">
+          <a href="#contact" className="services-final-cta__btn">
             Book a Free Consultation
-          </Link>
+          </a>
         </div>
       </section>
-    </main>
+    </div>
   )
 }
 

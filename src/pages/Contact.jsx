@@ -88,7 +88,7 @@ function Contact() {
   }
 
   return (
-    <main className="contact-page">
+    <div className="contact-page" id="contact">
       <section className="contact-hero">
         <div className="contact-hero__overlay"></div>
         <div className="contact-hero__content">
@@ -379,7 +379,7 @@ function Contact() {
           ></iframe>
         </div>
       </section>
-    </main>
+    </div>
   )
 }
 
