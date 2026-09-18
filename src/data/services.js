@@ -13,7 +13,7 @@ const services = [
       'Engagement session included',
     ],
     price: '₦450,000',
-    href: '/contact',
+    href: '#contact',
   },
   {
     id: 2,
@@ -29,7 +29,7 @@ const services = [
       'Video shots available as well',
     ],
     price: '₦100,000',
-    href: '/contact',
+    href: '#contact',
   },
   {
     id: 3,
@@ -45,7 +45,7 @@ const services = [
       'Corporate licensing included',
     ],
     price: '₦300,000',
-    href: '/contact',
+    href: '#contact',
   },
   {
     id: 4,
@@ -61,7 +61,7 @@ const services = [
       'Usage rights included',
     ],
     price: '₦150,000',
-    href: '/contact',
+    href: '#contact',
   },
 ]
 
