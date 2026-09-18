@@ -33,10 +33,11 @@ const SOCIAL_LINKS = [
 ]
 
 const QUICK_LINKS = [
-  { name: 'Home', to: '/' },
-  { name: 'About', to: '/about' },
-  { name: 'Services', to: '/services' },
-  { name: 'Contact', to: '/contact' },
+  { name: 'Home', href: '#home' },
+  { name: 'Portfolio', href: '#portfolio' },
+  { name: 'About', href: '#about' },
+  { name: 'Services', href: '#services' },
+  { name: 'Contact', href: '#contact' },
 ]
 
 function Footer() {
@@ -48,9 +49,9 @@ function Footer() {
         <div className="site-footer__grid">
           {/* Brand Column */}
           <div className="site-footer__brand-col">
-            <Link to="/" className="site-footer__brand">
+            <a href="#home" className="site-footer__brand">
               E.k Pic
-            </Link>
+            </a>
             <p className="site-footer__tagline">
               Capturing moments that tell stories. Professional photography for
               weddings, events, birthdays, and every unforgettable moment.
@@ -77,9 +78,9 @@ function Footer() {
             <ul className="site-footer__nav">
               {QUICK_LINKS.map((link) => (
                 <li key={link.name}>
-                  <Link to={link.to} className="site-footer__nav-link">
+                  <a href={link.href} className="site-footer__nav-link">
                     {link.name}
-                  </Link>
+                  </a>
                 </li>
               ))}
             </ul>
@@ -89,10 +90,10 @@ function Footer() {
           <div className="site-footer__services-col">
             <h4 className="site-footer__heading">Services</h4>
             <ul className="site-footer__nav">
-              <li><Link to="/services" className="site-footer__nav-link">Wedding Photography</Link></li>
-              <li><Link to="/services" className="site-footer__nav-link">Birthday Sessions</Link></li>
-              <li><Link to="/services" className="site-footer__nav-link">Event Coverage</Link></li>
-              <li><Link to="/services" className="site-footer__nav-link">Others</Link></li>
+              <li><a href="#services" className="site-footer__nav-link">Wedding Photography</a></li>
+              <li><a href="#services" className="site-footer__nav-link">Birthday Sessions</a></li>
+              <li><a href="#services" className="site-footer__nav-link">Event Coverage</a></li>
+              <li><a href="#services" className="site-footer__nav-link">Others</a></li>
             </ul>
           </div>
 
@@ -113,7 +114,7 @@ function Footer() {
                 <svg className="site-footer__contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
                 </svg>
-                <a href="tel:+919876543210" className="site-footer__contact-link">
+                <a href="tel:+2349066287219" className="site-footer__contact-link">
                   +234 906 628 7219
                 </a>
               </li>

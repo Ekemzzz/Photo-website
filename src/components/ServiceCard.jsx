@@ -50,9 +50,15 @@ function ServiceCard({ image, name, description, features, price, href }) {
             <span className="service-card__price-label">Starting from</span>
             <span className="service-card__price-value">{price}</span>
           </div>
-          <Link to={href} className="service-card__cta">
-            Book Now
-          </Link>
+          {href.startsWith('#') ? (
+            <a href={href} className="service-card__cta">
+              Book Now
+            </a>
+          ) : (
+            <Link to={href} className="service-card__cta">
+              Book Now
+            </Link>
+          )}
         </div>
       </div>
     </article>
