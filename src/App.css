@@ -716,6 +716,20 @@
   gap: 28px;
 }
 
+/* Wide desktop (≥1400px): 4 columns so the 4 square weddings fill row 1
+   cleanly and the 4:3 shots align on their own rows. Container also widens
+   to give the imagery more presence on large monitors. */
+@media (min-width: 1400px) {
+  .portfolio {
+    max-width: 1600px;
+    box-sizing: border-box;
+  }
+
+  .portfolio__grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
 @media (max-width: 640px) {
   .portfolio__grid {
     grid-template-columns: repeat(2, 1fr);
