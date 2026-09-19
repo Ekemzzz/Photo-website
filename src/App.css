@@ -1667,6 +1667,7 @@
   align-items: center;
   justify-content: space-between;
   gap: 16px;
+  flex-wrap: wrap;
   margin-top: auto;
   padding-top: 20px;
   border-top: 1px solid var(--border);
@@ -1697,7 +1698,7 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 12px 28px;
+  padding: 12px 24px;
   border-radius: 8px;
   font-size: 0.95rem;
   font-weight: 600;
@@ -1707,6 +1708,7 @@
   border: 2px solid var(--accent);
   transition: all 0.3s ease;
   white-space: nowrap;
+  box-sizing: border-box;
 }
 
 .service-card__cta:hover {
@@ -1826,6 +1828,17 @@
 
   .services-list__grid {
     gap: 24px;
+  }
+
+  .service-card__footer {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 14px;
+  }
+
+  .service-card__cta {
+    width: 100%;
+    text-align: center;
   }
 }
 
