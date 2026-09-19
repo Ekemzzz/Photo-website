@@ -5,6 +5,7 @@ const services = [
     description:
       'Timeless, emotionally charged coverage of your special day, from the quiet getting-ready moments to the lively reception dance floor.',
     image: '/images/weddings/wedding-4.jpg',
+    objectPosition: 'center top',
     features: [
       'Full-day coverage (8–12 hours)',
       'Drone Support',

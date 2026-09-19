@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
  * Displays an image, service name, description, feature list,
  * starting price, and a "Book Now" link.
  */
-function ServiceCard({ image, name, description, features, price, href }) {
+function ServiceCard({ image, name, description, features, price, href, objectPosition }) {
   return (
     <article className="service-card">
       <div className="service-card__image-wrapper">
@@ -15,6 +15,7 @@ function ServiceCard({ image, name, description, features, price, href }) {
           src={image}
           alt={name}
           loading="lazy"
+          style={objectPosition ? { objectPosition } : undefined}
         />
         <div className="service-card__image-overlay"></div>
       </div>

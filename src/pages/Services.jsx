@@ -99,6 +99,7 @@ function Services() {
               features={service.features}
               price={service.price}
               href={service.href}
+              objectPosition={service.objectPosition}
             />
           ))}
         </div>

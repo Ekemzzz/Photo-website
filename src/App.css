@@ -108,10 +108,12 @@
 .navbar__hamburger.is-open span:nth-child(1) {
   transform: translateY(7px) rotate(45deg);
 }
+
 .navbar__hamburger.is-open span:nth-child(2) {
   opacity: 0;
   transform: scaleX(0);
 }
+
 .navbar__hamburger.is-open span:nth-child(3) {
   transform: translateY(-7px) rotate(-45deg);
 }
@@ -3131,6 +3133,7 @@
 
 /* Services — 480px fine-tuning */
 @media (max-width: 480px) {
+
   .services-list,
   .services-packages,
   .services-process,
