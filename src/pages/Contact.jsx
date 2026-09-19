@@ -52,6 +52,46 @@ const SOCIAL_LINKS = [
   },
 ]
 
+const NIGERIAN_STATES = [
+  'Abia',
+  'Adamawa',
+  'Akwa Ibom',
+  'Anambra',
+  'Bauchi',
+  'Bayelsa',
+  'Benue',
+  'Borno',
+  'Cross River',
+  'Delta',
+  'Ebonyi',
+  'Edo',
+  'Ekiti',
+  'Enugu',
+  'FCT - Abuja',
+  'Gombe',
+  'Imo',
+  'Jigawa',
+  'Kaduna',
+  'Kano',
+  'Katsina',
+  'Kebbi',
+  'Kogi',
+  'Kwara',
+  'Lagos',
+  'Nasarawa',
+  'Niger',
+  'Ogun',
+  'Ondo',
+  'Osun',
+  'Oyo',
+  'Plateau',
+  'Rivers',
+  'Sokoto',
+  'Taraba',
+  'Yobe',
+  'Zamfara',
+]
+
 function Contact() {
   const [formData, setFormData] = useState({
     name: '',
@@ -177,14 +217,21 @@ function Contact() {
                     />
                   </label>
                   <label className="contact-form__field">
-                    <span className="contact-form__label">Location</span>
+                    <span className="contact-form__label">State of Residence / Location</span>
                     <input
                       type="text"
                       name="location"
+                      list="nigerian-states-list"
                       value={formData.location}
                       onChange={handleChange}
-                      placeholder="State of Residence"
+                      placeholder="Select or type state..."
+                      autoComplete="off"
                     />
+                    <datalist id="nigerian-states-list">
+                      {NIGERIAN_STATES.map((state) => (
+                        <option key={state} value={state} />
+                      ))}
+                    </datalist>
                   </label>
                 </div>
 
