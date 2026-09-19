@@ -1,16 +1,62 @@
-# React + Vite
+# E.k Pic Photography
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern photography portfolio website built with React and Vite for showcasing weddings, events, birthdays, and special life moments.
 
-Currently, two official plugins are available:
+## Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+E.k Pic is a visual portfolio site created to present the studio's work, highlight services, and make it easy for clients to explore past projects and contact the photographer for bookings.
 
-## React Compiler
+## Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Hero banner and strong brand presentation
+- Portfolio gallery for weddings, events, birthdays, and other occasions
+- Filterable category navigation
+- Service and package sections
+- About section with studio story and value proposition
+- Contact section for inquiries and bookings
+- Responsive layout for mobile and desktop viewing
+- Smooth in-page navigation using React Router
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React
+- Vite
+- React Router DOM
+- CSS for styling
+- PropTypes for component validation
+
+## Getting Started
+
+1. Install dependencies:
+
+   npm install
+
+2. Start the development server:
+
+   npm run dev
+
+3. Open the app in your browser at the local Vite URL, typically:
+
+   http://localhost:5173
+
+## Production Build
+
+To create a production build:
+
+npm run build
+
+To preview the production build locally:
+
+npm run preview
+
+## Project Structure
+
+- src/App.jsx — app routing and global layout
+- src/pages — page sections such as Home, About, Services, and Contact
+- src/components — reusable UI elements like Navbar, Footer, Portfolio, and Gallery
+- src/data — content for services, categories, packages, and testimonials
+- public/images — project image assets grouped by category
+
+## Notes
+
+This project is intended as a portfolio and booking-focused photography website. Images and content can be replaced or expanded to match a real studio's portfolio, branding, and pricing structure.
