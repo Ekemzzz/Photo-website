@@ -5,7 +5,6 @@ const portfolioImages = [
     alt: 'Traditional wedding celebration shot',
     category: 'weddings',
     objectPosition: 'top',
-    forceSquare: true,
   },
   {
     id: 2,
@@ -13,7 +12,6 @@ const portfolioImages = [
     alt: 'Bridal portrait and moments',
     category: 'weddings',
     objectPosition: 'top',
-    forceSquare: true,
   },
   {
     id: 3,
@@ -21,7 +19,6 @@ const portfolioImages = [
     alt: 'Wedding ceremony portrait',
     category: 'weddings',
     objectPosition: 'top',
-    forceSquare: true,
   },
   {
     id: 301,
@@ -29,7 +26,6 @@ const portfolioImages = [
     alt: 'Luxury wedding gallery shot',
     category: 'weddings',
     objectPosition: 'top',
-    forceSquare: true,
   },
   {
     id: 4,
@@ -71,6 +67,12 @@ const portfolioImages = [
     id: 11,
     src: '/images/others/other-2.jpg',
     alt: 'Special moments photography',
+    category: 'others',
+  },
+  {
+    id: 12,
+    src: '/images/fashion/fashion-1.jpg',
+    alt: 'Fashion & portrait creative shoot',
     category: 'others',
   },
 ]

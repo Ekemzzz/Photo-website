@@ -740,29 +740,41 @@
 
 @media (max-width: 640px) {
   .portfolio__grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+  }
+
+  .gallery-item,
+  .gallery-item--square {
+    aspect-ratio: 1 / 1;
+    border-radius: 8px;
   }
 }
 
 @media (max-width: 480px) {
   .portfolio {
-    padding: 48px 16px;
+    padding: 48px 12px;
   }
 
   .portfolio__grid {
-    grid-template-columns: 1fr;
-    gap: 16px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 6px;
+  }
+
+  .gallery-item,
+  .gallery-item--square {
+    aspect-ratio: 1 / 1;
+    border-radius: 6px;
   }
 
   .portfolio__filters {
-    gap: 8px;
-    margin-bottom: 28px;
+    gap: 6px;
+    margin-bottom: 24px;
   }
 
   .portfolio__filter-btn {
-    padding: 7px 16px;
-    font-size: 13px;
+    padding: 6px 12px;
+    font-size: 12px;
   }
 }
 
@@ -775,7 +787,7 @@
   background: var(--card-bg, #13141c);
   border: 1px solid rgba(255, 255, 255, 0.08);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
-  aspect-ratio: 4 / 3;
+  aspect-ratio: 1 / 1;
   transition: transform 0.35s cubic-bezier(0.25, 1, 0.5, 1), box-shadow 0.35s ease, border-color 0.35s ease;
 }
 
