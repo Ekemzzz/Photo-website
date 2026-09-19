@@ -137,10 +137,6 @@ function Footer() {
           <p className="site-footer__copyright">
             &copy; {currentYear} E.k Pic. All rights reserved.
           </p>
-          <div className="site-footer__legal">
-            <a href="#" className="site-footer__legal-link">Privacy Policy</a>
-            <a href="#" className="site-footer__legal-link">Terms of Service</a>
-          </div>
         </div>
       </div>
     </footer>
