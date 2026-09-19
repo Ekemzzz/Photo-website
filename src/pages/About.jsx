@@ -117,23 +117,6 @@ function About() {
           </div>
         </div>
       </section>
-
-      {/* ── Call to Action ── */}
-      <section className="about-cta">
-        <h2 className="about-cta__title">Ready to Tell Your Story?</h2>
-        <p className="about-cta__body">
-          Let's create something unforgettable together. Reach out for a
-          consultation, portfolio review, or custom project proposal.
-        </p>
-        <div className="about-cta__actions">
-          <a href="#contact" className="about-cta__btn about-cta__btn--primary">
-            Contact Me
-          </a>
-          <a href="#portfolio" className="about-cta__btn about-cta__btn--secondary">
-            View Portfolio
-          </a>
-        </div>
-      </section>
     </div>
   )
 }
