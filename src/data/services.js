@@ -52,8 +52,9 @@ const services = [
     id: 4,
     name: 'Others',
     description:
-      'From family portraits and creative shoots to brand campaigns and personal projects — every story deserves a great image.',
+      'From family portraits and creative shoots to brand campaigns and personal projects. Every story deserves a great image.',
     image: '/images/others/other-1.jpg',
+    objectPosition: 'center top',
     features: [
       'Flexible session duration',
       'Studio or outdoor location',
