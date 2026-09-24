@@ -467,7 +467,34 @@
   }
 
   .category-card__content {
+    padding: 16px 16px;
+  }
+
+  /* Let long single-word titles shrink instead of pushing the arrow out */
+  .category-card__title {
+    min-width: 0;
+    overflow-wrap: anywhere;
+  }
+}
+
+/* Very small phones (≤380px): single column so card headers never clip */
+@media (max-width: 380px) {
+  .categories__grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .category-card {
+    aspect-ratio: 16 / 9;
+  }
+
+  .category-card__content {
     padding: 18px 20px;
+  }
+
+  .category-card__arrow {
+    width: 28px;
+    height: 28px;
   }
 }
 
@@ -556,8 +583,8 @@
 
 @media (max-width: 640px) {
   .portfolio__grid {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 8px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
   }
 
   .gallery-item,
@@ -573,8 +600,8 @@
   }
 
   .portfolio__grid {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 6px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
   }
 
   .gallery-item,
