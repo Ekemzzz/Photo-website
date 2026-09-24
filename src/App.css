@@ -1196,6 +1196,11 @@
     gap: 16px;
   }
 
+  /* Fifth (odd) card spans the full row instead of sitting alone */
+  .about-stats__card:last-child:nth-child(odd) {
+    grid-column: 1 / -1;
+  }
+
   .about-stats__number {
     font-size: 2rem;
   }
@@ -1255,6 +1260,11 @@
     grid-template-columns: repeat(2, 1fr);
   }
 
+  /* Fifth (odd) card spans the full row instead of sitting alone */
+  .about-stats__card:last-child:nth-child(odd) {
+    grid-column: 1 / -1;
+  }
+
   .about-stats__card {
     padding: 20px 16px;
   }
@@ -1285,7 +1295,9 @@
   justify-content: center;
   background-image: url('/images/services-hero-bg.jpg');
   background-size: cover;
-  background-position: center right;
+  /* Anchor on the camera-on-chair subject (lower-right of the square art),
+     otherwise the wide/short hero band crops it out below fullscreen */
+  background-position: 72% 76%;
   overflow: hidden;
 }
 
@@ -1657,6 +1669,11 @@
 }
 
 @media (max-width: 768px) {
+
+  /* Narrow viewports crop horizontally too — keep the camera centered */
+  .services-hero {
+    background-position: 66% 90%;
+  }
 
   .services-hero,
   .contact-hero {
