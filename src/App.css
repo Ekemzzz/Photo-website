@@ -339,7 +339,7 @@
   }
 
   .category-card__title {
-    font-size: 1.15rem;
+    font-size: 1rem;
   }
 }
 
@@ -473,10 +473,12 @@
     padding: 16px 16px;
   }
 
-  /* Let long single-word titles shrink instead of pushing the arrow out */
+  /* Narrower cards — shrink title font so single words fit on one line */
   .category-card__title {
     min-width: 0;
-    overflow-wrap: anywhere;
+    font-size: 1rem;
+    overflow-wrap: normal;
+    word-break: normal;
   }
 
   /* Narrower cards need more lines to show the same sentence */
@@ -1932,6 +1934,8 @@
   max-width: 100%;
   width: 100%;
   box-sizing: border-box;
+  -webkit-appearance: none;
+  appearance: none;
 }
 
 /* Android Chrome / iOS Safari render the value through this internal element,
@@ -1940,6 +1944,7 @@
 .contact-form input[type="date"]::-webkit-date-and-time-value {
   text-align: left;
   min-width: 0;
+  width: 100%;
   margin-inline-start: 0;
 }
 
