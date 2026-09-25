@@ -1925,6 +1925,15 @@
   box-sizing: border-box;
 }
 
+/* Android Chrome / iOS Safari render the value through this internal element,
+   which centres it and brings its own intrinsic width — the outer min-width:0
+   above does not reach it */
+.contact-form input[type="date"]::-webkit-date-and-time-value {
+  text-align: left;
+  min-width: 0;
+  margin-inline-start: 0;
+}
+
 .contact-form select option {
   background: #13141c;
   color: #ffffff;
