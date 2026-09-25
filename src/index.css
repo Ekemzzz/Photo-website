@@ -32,14 +32,29 @@
 
 body {
   margin: 0;
+  /* Paint the whole viewport (incl. the area behind a mobile browser's
+     collapsing URL bar) so no black strip can show below the footer */
+  min-height: 100vh;
+  min-height: 100dvh;
+  background: var(--bg);
 }
 
 #root {
   width: 100%;
   min-height: 100vh;
+  /* dvh tracks the *visible* viewport on phones (URL bar shown/collapsed),
+     preventing a black gap after the footer; vh stays as fallback */
+  min-height: 100dvh;
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
+}
+
+/* Let the page content absorb any leftover height so the footer is always
+   pushed flush to the bottom — otherwise a short page leaves #root stretched
+   and the near-black body background shows as a strip under the footer. */
+#root > main {
+  flex: 1 0 auto;
 }
 
 h1,

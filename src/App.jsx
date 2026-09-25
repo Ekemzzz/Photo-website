@@ -3,6 +3,7 @@ import { useEffect } from 'react'
 import './App.css'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
+import ScrollControls from './components/ScrollControls'
 import HomePage from './pages/HomePage'
 import NotFound from './pages/NotFound'
 
@@ -57,6 +58,7 @@ function App() {
         <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />
+      <ScrollControls />
     </BrowserRouter>
   )
 }
