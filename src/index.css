@@ -11,6 +11,11 @@
   --social-bg: rgba(255, 255, 255, 0.05);
   --shadow: 0 12px 32px rgba(0, 0, 0, 0.4);
 
+  /* Canvas colour a mobile browser paints *below the end of the document*
+     (overscroll / URL-bar strip). Matched to the footer's rendered edge
+     (#14141e) so no black band appears after the footer on phones. */
+  --page-canvas: #14141e;
+
   --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
   --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
   --mono: ui-monospace, Consolas, monospace;
@@ -19,11 +24,14 @@
   letter-spacing: 0.18px;
   color-scheme: dark;
   color: var(--text);
-  background: var(--bg);
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  /* Canvas colour — only visible outside the document bounds, because body
+     paints over the page itself. Matches the footer's bottom edge so the
+     strip under the footer on phones blends in instead of reading as black. */
+  background: var(--page-canvas);
 
   @media (max-width: 1024px) {
     font-size: 16px;
