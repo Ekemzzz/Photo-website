@@ -462,8 +462,11 @@
 }
 
 @media (max-width: 640px) {
+  /* The fixed 16/10 ratio made the card shorter than its own text, so
+     overflow:hidden clipped the title off the top. Let the card grow. */
   .category-card {
-    aspect-ratio: 16 / 10;
+    aspect-ratio: auto;
+    min-height: 190px;
   }
 
   .category-card__content {
@@ -475,6 +478,12 @@
     min-width: 0;
     overflow-wrap: anywhere;
   }
+
+  /* Narrower cards need more lines to show the same sentence */
+  .category-card__description {
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+  }
 }
 
 /* Very small phones (≤380px): single column so card headers never clip */
@@ -485,7 +494,7 @@
   }
 
   .category-card {
-    aspect-ratio: 16 / 9;
+    min-height: 170px;
   }
 
   .category-card__content {
