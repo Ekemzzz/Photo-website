@@ -6,10 +6,14 @@ import portfolioImages from '../data/portfolio'
 
 const filters = ['all', 'weddings', 'events', 'birthdays', 'others']
 
+/** Number of gallery items shown before "See More" is clicked */
+const VISIBLE_COUNT = 4
+
 /**
  * Portfolio section — filterable image gallery with lightbox.
  * Uses reusable GalleryItem and Lightbox components.
  * Reads the URL hash to pre-select a category filter.
+ * Shows VISIBLE_COUNT images with a See More / Show Less toggle.
  */
 function Portfolio() {
   const location = useLocation()
@@ -26,11 +30,24 @@ function Portfolio() {
     }
   }, [location.hash])
   const [lightboxIndex, setLightboxIndex] = useState(null)
+  const [showAll, setShowAll] = useState(false)
+
+  // Collapse back to the first few images whenever the filter changes
+  useEffect(() => {
+    setShowAll(false)
+  }, [activeFilter])
 
   const filteredImages = useMemo(() => {
     if (activeFilter === 'all') return portfolioImages
     return portfolioImages.filter((img) => img.category === activeFilter)
   }, [activeFilter])
+
+  const visibleImages = useMemo(
+    () => (showAll ? filteredImages : filteredImages.slice(0, VISIBLE_COUNT)),
+    [filteredImages, showAll]
+  )
+
+  const hasMore = filteredImages.length > VISIBLE_COUNT
 
   const openLightbox = useCallback((index) => {
     setLightboxIndex(index)
@@ -42,15 +59,15 @@ function Portfolio() {
 
   const goToPrev = useCallback(() => {
     setLightboxIndex((prev) =>
-      prev === 0 ? filteredImages.length - 1 : prev - 1
+      prev === 0 ? visibleImages.length - 1 : prev - 1
     )
-  }, [filteredImages.length])
+  }, [visibleImages.length])
 
   const goToNext = useCallback(() => {
     setLightboxIndex((prev) =>
-      prev === filteredImages.length - 1 ? 0 : prev + 1
+      prev === visibleImages.length - 1 ? 0 : prev + 1
     )
-  }, [filteredImages.length])
+  }, [visibleImages.length])
 
   return (
     <section className="portfolio" id="portfolio">
@@ -72,7 +89,7 @@ function Portfolio() {
       </div>
 
       <div className="portfolio__grid">
-        {filteredImages.map((image, index) => (
+        {visibleImages.map((image, index) => (
           <GalleryItem
             key={image.id}
             src={image.src}
@@ -84,9 +101,37 @@ function Portfolio() {
         ))}
       </div>
 
+      {hasMore && (
+        <div className="portfolio__more">
+          <button
+            type="button"
+            className="portfolio__more-btn"
+            onClick={() => setShowAll((prev) => !prev)}
+            aria-expanded={showAll}
+          >
+            {showAll ? 'Show Less' : `See More (${filteredImages.length - VISIBLE_COUNT})`}
+            <svg
+              className={`portfolio__more-icon${showAll ? ' portfolio__more-icon--up' : ''}`}
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2.5"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              aria-hidden="true"
+            >
+              <polyline points="6 9 12 15 18 9" />
+            </svg>
+          </button>
+        </div>
+      )}
+
       {lightboxIndex !== null && (
         <Lightbox
-          images={filteredImages}
+          images={visibleImages}
           currentIndex={lightboxIndex}
           onClose={closeLightbox}
           onPrev={goToPrev}

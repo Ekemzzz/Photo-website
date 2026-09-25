@@ -561,6 +561,44 @@
   opacity: 0.9;
 }
 
+/* ── Portfolio See More / Show Less ── */
+.portfolio__more {
+  display: flex;
+  justify-content: center;
+  margin-top: 36px;
+}
+
+.portfolio__more-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 13px 34px;
+  border-radius: 28px;
+  border: 1px solid var(--accent-border);
+  background: var(--accent-bg);
+  color: var(--text-h);
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  cursor: pointer;
+  transition: background 0.3s ease, border-color 0.3s ease, transform 0.2s ease, color 0.3s ease;
+}
+
+.portfolio__more-btn:hover {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+.portfolio__more-icon {
+  transition: transform 0.3s ease;
+}
+
+.portfolio__more-icon--up {
+  transform: rotate(180deg);
+}
+
 .portfolio__grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -3177,6 +3215,8 @@
   background: linear-gradient(135deg, rgba(20, 20, 30, 0.98) 0%, rgba(40, 30, 55, 0.96) 50%, rgba(20, 20, 30, 0.98) 100%);
   color: rgba(245, 240, 255, 0.85);
   padding: 64px 0 0;
+  /* Extend the footer background behind the home-indicator strip on notched phones */
+  padding-bottom: env(safe-area-inset-bottom, 0px);
   margin-top: 80px;
   border-top: 1px solid rgba(255, 255, 255, 0.08);
 }
@@ -3364,6 +3404,7 @@
 @media (max-width: 640px) {
   .site-footer {
     padding: 48px 0 0;
+    padding-bottom: env(safe-area-inset-bottom, 0px);
     margin-top: 60px;
   }
 
@@ -3473,4 +3514,100 @@
   border-color: var(--accent);
   color: var(--accent);
   transform: translateY(-2px);
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   Up / Down Scroll Controls
+   ═══════════════════════════════════════════════════════════════ */
+.scroll-controls {
+  position: fixed;
+  right: 24px;
+  /* Lift the control clear of the iPhone home-indicator strip */
+  bottom: calc(24px + env(safe-area-inset-bottom, 0px));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 26px;
+  border: 1px solid var(--accent-border);
+  background: rgba(19, 20, 28, 0.82);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+  /* Clips each arrow's hover fill to the pill shape */
+  overflow: hidden;
+  /* Below the navbar (100) so the lightbox and menu stay on top of it */
+  z-index: 90;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(14px) scale(0.85);
+  transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.scroll-controls--visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0) scale(1);
+}
+
+.scroll-controls__btn {
+  width: 46px;
+  height: 46px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background: transparent;
+  color: var(--text-h);
+  cursor: pointer;
+  transition: background 0.25s ease, color 0.25s ease;
+}
+
+.scroll-controls__btn:hover:not(:disabled),
+.scroll-controls__btn:active:not(:disabled) {
+  background: var(--accent);
+  color: #ffffff;
+}
+
+.scroll-controls__btn:focus-visible {
+  outline: 2px solid var(--accent);
+  /* Inset so the ring is not clipped by the pill's overflow: hidden */
+  outline-offset: -4px;
+}
+
+/* Nothing left below to scroll to */
+.scroll-controls__btn:disabled {
+  opacity: 0.32;
+  cursor: default;
+}
+
+.scroll-controls__divider {
+  width: 24px;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.14);
+  flex-shrink: 0;
+}
+
+@media (max-width: 640px) {
+  .scroll-controls {
+    right: 16px;
+    bottom: calc(16px + env(safe-area-inset-bottom, 0px));
+  }
+
+  /* 44px keeps both arrows at the WCAG minimum tap target */
+  .scroll-controls__btn {
+    width: 44px;
+    height: 44px;
+  }
+}
+
+/* Honour the OS "reduce motion" setting — fade only, no slide */
+@media (prefers-reduced-motion: reduce) {
+  .scroll-controls {
+    transition: opacity 0.2s ease, visibility 0.2s;
+    transform: none;
+  }
+
+  .scroll-controls--visible {
+    transform: none;
+  }
 }
